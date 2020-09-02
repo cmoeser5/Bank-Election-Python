@@ -71,5 +71,6 @@ Winner: {winner}
 
 print(output)
 
+
 with open(outfile, "w") as output_file:
     output_file.write(output)
