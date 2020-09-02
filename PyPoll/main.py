@@ -8,6 +8,8 @@ Li_votes = []
 OTooley_votes = []
 
 path = os.path.join("Resources", "election_data.csv")
+        
+outfile = os.path.join("Analysis", "PyPoll.txt")
 
 
 with open(path, "r") as file:
@@ -53,3 +55,21 @@ votes = list(dict_winner.values())
 winner = candidates[votes.index(max(votes))]
 
 
+output = f"""
+Election Results
+-------------------------
+Total Votes: {total_votes}
+-------------------------
+Khan: {Khan_percent: .3f}% ({total_Khan_votes})
+Correy: {Correy_percent: .3f}% ({total_Correy_votes})
+Li: {Li_percent: .3f}% ({total_Li_votes})
+O'Tooley: {OTooley_percent: .3f}% ({total_OTooley_votes})
+-------------------------
+Winner: {winner}
+-------------------------
+"""
+
+print(output)
+
+with open(outfile, "w") as output_file:
+    output_file.write(output)
