@@ -44,6 +44,7 @@ Greatest Increase in Profits: {total_months[greatest_increase_date]} (${greatest
 Greatest Decrease in Profits: {total_months[greatest_decrease_date]} (${greatest_decrease})
 """
 
+print(output)
 
 with open(outfile, "w") as output_file:
     output_file.write(output)
