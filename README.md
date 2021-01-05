@@ -1,5 +1,13 @@
+# Background
+
+It's time to put away the Excel sheet and enter the world of programming with Python. This assignment requires using
+Pythons concepts to complete two separate challenges: PyBank and PyPoll. Both of challenges encompasses a real-world
+situation where Python scripting skills can come in handy.
+
+# Technologies Used
+* Python
+
 ## PyBank
---------------
 * In this challenge, you are tasked with creating a Python script for analyzing the financial records of a company, using the dataset called budget_data.csv.
 
 * Your task is to create a Python script that analyzes the records to calculate each of the following:
@@ -24,7 +32,7 @@
         Greatest Increase in Profits: Feb-2012 ($1926159)
         Greatest Decrease in Profits: Sep-2013 ($-2196167)
 ```
------------
+
 ## PyPoll
 * In this challenge, you are tasked with helping a small, rural town modernize its vote counting process using the dataset called election_data.csv.
 
